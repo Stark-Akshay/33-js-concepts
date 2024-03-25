@@ -3,21 +3,21 @@
   <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/dsHmk6H.jpg" alt="33 Concepts Every JS Developer Should Know" width=200" /></a>
   <br>
     <br>
-  33 Concepts Every JavaScript Developer Should Know
+  33 കോൺസെപ്റ്റുകൾ എല്ലാ ജാവാസ്ക്രിപ്റ്റ് ഡവലപ്പർമാരും അറിയേണ്ടതുണ്ട്
   <br><br>
 </h1>
 
-## Introduction 
+## ആമുഖം 
 
-This repository was created with the intention of helping developers master their concepts in JavaScript. It is not a requirement, but a guide for future studies. It is based on an article written by Stephen Curtis and you can read it [here](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
+ഈ റിപ്പോസിറ്ററി സൃഷ്ടിച്ചിരിക്കുന്നത് ഡെവലപ്പർമാർക്ക് ജാവാസ്ക്രിപ്റ്റിലെ കോൺസെപ്റ്റുകൾ മാസ്റ്റർ ചെയ്യാൻ സഹായിക്കുന്നതിനായിട്ടാണ്. ഇത് ഒരു ആവശ്യമല്ല, പകരം ഭാവിയിലെ പഠനങ്ങൾക്കുള്ള ഒരു മാർഗ്ഗനിർദ്ദേശമാണ്. ഇത് സ്റ്റീഫൻ കർട്ടിസ് എഴുതിയ ഒരു ലേഖനത്തിൽ നിന്നാണ് കൈകാര്യം ചെയ്തിരിക്കുന്നത്, നിങ്ങൾക്ക് അത് [ഇവിടെ] വായിക്കാവുന്നതാണ്.(https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
 
-**🚀 Considered by GitHub as one of the [top open source projects of 2018!](https://blog.github.com/2018-12-13-new-open-source-projects/)**
+**🚀 ഗിറ്റ്ഹബ് കണക്കാക്കുന്നത് 2018-ലെ [ശ്രേഷ്ഠമായ ഓപ്പൺസോഴ്സ് പ്രോജക്ടുകളിലൊന്നായിട്ടാണ്](https://blog.github.com/2018-12-13-new-open-source-projects/)**
 
-## Community
+## കമ്യൂണിറ്റി
 
-Feel free to submit a PR by adding a link to your own recaps or reviews. If you want to translate the repo into your native language, please feel free to do so.
+നിങ്ങളുടെ സ്വന്തം റീകാപ്പുകളോ പുനരവലോകനങ്ങളോ ലിങ്കുചെയ്ത് ഒരു പി.ആർ സമർപ്പിക്കുന്നതിൽ സ്വതന്ത്രരാണ്. നിങ്ങളുടെ മാതൃഭാഷയിലേക്ക് റിപ്പോ പരിഭാഷപ്പെടുത്താൻ ആഗ്രഹിക്കുന്നുവെങ്കിൽ, അതിന് സ്വാതന്ത്ര്യമുണ്ട്.
 
-All the translations for this repo will be listed below:
+ഈ റിപ്പോയുടെ എല്ലാ പരിഭാഷകളും താഴെ പട്ടികപ്പെടുത്തിയിരിക്കുന്നു:
 
 - [اَلْعَرَبِيَّةُ‎ (Arabic)](https://github.com/amrsekilly/33-js-concepts) — Amr Elsekilly
 - [Български (Bulgarian)](https://github.com/thewebmasterp/33-js-concepts) - thewebmasterp
@@ -63,45 +63,45 @@ All the translations for this repo will be listed below:
 ---
 ## <img  align= center width=50px height=50px src="https://media4.giphy.com/media/3hoLIVAJYkz6T0Ichp/giphy.gif?cid=6c09b952m4j3poopinf91rquev6qy4e8avu0bflq1e0vh4gp&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s"> <a id="table-of-contents">Table of Contents</a>
 
-1. **[Call Stack](#1-call-stack)**
-2. **[Primitive Types](#2-primitive-types)**
-3. **[Value Types and Reference Types](#3-value-types-and-reference-types)**
-4. **[Implicit, Explicit, Nominal, Structuring and Duck Typing](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
+1. **[കോൾ സ്റ്റാക്ക്](#1-call-stack)**
+2. **[പ്രിമിറ്റീവ് ടൈപ്പുകൾ](#2-primitive-types)**
+3. **[വാല്യു ടൈപ്പുകളും റെഫറന്‍സ് ടൈപ്പുകളും](#3-value-types-and-reference-types)**
+4. **[അന്തരംഗം, ബാഹ്യം, നോമിനൽ, സ്ട്രക്ചറിംഗ്, ഡക്ക് ടൈപ്പിംഗ്](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
 5. **[== vs === vs typeof](#5--vs--vs-typeof)**
-6. **[Function Scope, Block Scope and Lexical Scope](#6-function-scope-block-scope-and-lexical-scope)**
-7. **[Expression vs Statement](#7-expression-vs-statement)**
-8. **[IIFE, Modules and Namespaces](#8-iife-modules-and-namespaces)**
-9. **[Message Queue and Event Loop](#9-message-queue-and-event-loop)**
-10. **[setTimeout, setInterval and requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)**
-11. **[JavaScript Engines](#11-javascript-engines)**
-12. **[Bitwise Operators, Type Arrays and Array Buffers](#12-bitwise-operators-type-arrays-and-array-buffers)**
-13. **[DOM and Layout Trees](#13-dom-and-layout-trees)**
-14. **[Factories and Classes](#14-factories-and-classes)**
-15. **[this, call, apply and bind](#15-this-call-apply-and-bind)**
-16. **[new, Constructor, instanceof and Instances](#16-new-constructor-instanceof-and-instances)**
-17. **[Prototype Inheritance and Prototype Chain](#17-prototype-inheritance-and-prototype-chain)**
-18. **[Object.create and Object.assign](#18-objectcreate-and-objectassign)**
-19. **[map, reduce, filter](#19-map-reduce-filter)**
-20. **[Pure Functions, Side Effects, State Mutation and Event Propagation](#20-pure-functions-side-effects-state-mutation-and-event-propagation)**
-21. **[Closures](#21-closures)**
-22. **[High Order Functions](#22-high-order-functions)**
-23. **[Recursion](#23-recursion)**
-24. **[Collections and Generators](#24-collections-and-generators)**
-25. **[Promises](#25-promises)**
-26. **[async/await](#26-asyncawait)**
-27. **[Data Structures](#27-data-structures)**
-28. **[Expensive Operation and Big O Notation](#28-expensive-operation-and-big-o-notation)**
-29. **[Algorithms](#29-algorithms)**
-30. **[Inheritance, Polymorphism and Code Reuse](#30-inheritance-polymorphism-and-code-reuse)**
-31. **[Design Patterns](#31-design-patterns)**
-32. **[Partial Applications, Currying, Compose and Pipe](#32-partial-applications-currying-compose-and-pipe)**
-33. **[Clean Code](#33-clean-code)**
+6. **[ഫംഗ്ഷൻ സ്കോപ്പ്, ബ്ലോക്ക് സ്കോപ്പ്, ലെക്സിക്കൽ സ്കോപ്പ്](#6-function-scope-block-scope-and-lexical-scope)**
+7. **[എക്‌സ്പ്രെഷൻ vs സ്റ്റേറ്റ്മെന്റ്](#7-expression-vs-statement)**
+8. **[ഐഐഎഫ്ഇ, മോഡ്യൂളുകൾ, നെയിംസ്പെയ്‌സുകൾ](#8-iife-modules-and-namespaces)**
+9. **[മെസേജ് ക്യു, ഇവന്റ് ലൂപ്പ്](#9-message-queue-and-event-loop)**
+10. **[സെറ്റ്ടൈംഔട്ട്, സെറ്റ്ഇന്റർവൽ, റിക്വസ്റ്റാനിമേഷൻഫ്രെയിം](#10-settimeout-setinterval-and-requestanimationframe)**
+11. **[ജാവാസ്ക്രിപ്റ്റ് എഞ്ചിനുകൾ](#11-javascript-engines)**
+12. **[ബിറ്റ്‌വൈസ് ഓപ്പറേറ്ററുകൾ, ടൈപ്പ്ഡ് ArrayകളുംArray ബഫറുകളും](#12-bitwise-operators-type-arrays-and-array-buffers)**
+13. **[ഡോം, ലേഔട്ട് ട്രീകൾ](#13-dom-and-layout-trees)**
+14. **[ഫാക്ടറികൾ, ക്ലാസുകൾ](#14-factories-and-classes)**
+15. **[തിസ്, കോൾ, അപ്ലേ, ബൈന്‍ഡ്](#15-this-call-apply-and-bind)**
+16. **[ന്യു, കണ്‍സ്ട്രക്ടർ, ഇന്‍സ്റ്റന്റ്സ്, ഇന്‍സ്റ്റന്‍സ്ഓഫ്](#16-new-constructor-instanceof-and-instances)**
+17. **[പ്രോട്ടോടൈപ്പ് ഇൻഹെരിറ്റൻസ്, പ്രോട്ടോടൈപ്പ് ചെയിൻ](#17-prototype-inheritance-and-prototype-chain)**
+18. **[ഓബ്ജക്ട്.ക്രിയേറ്റ്, ഓബ്ജക്ട്.അസൈൻ](#18-objectcreate-and-objectassign)**
+19. **[മാപ്പ്, റിഡ്യൂസ്, ഫിൽട്ടർ](#19-map-reduce-filter)**
+20. **[പ്യുർ ഫങ്ഷനുകൾ, സൈഡ് ഇഫക്ടുകൾ, സ്റ്റേറ്റ് മ്യൂട്ടേഷൻ, ഇവന്റ് പ്രോപഗേഷൻ](#20-pure-functions-side-effects-state-mutation-and-event-propagation)**
+21. **[ക്ലോസറുകൾ](#21-closures)**
+22. **[ഹയർ ഓർഡർ ഫങ്ഷനുകൾ](#22-high-order-functions)**
+23. **[റിക്കോർഷൻ](#23-recursion)**
+24. **[കളക്ഷനുകളും ജനറേറ്ററുകളും](#24-collections-and-generators)**
+25. **[പ്രോമിസുകൾ](#25-promises)**
+26. **[ഏസിങ്ക്/അവെയ്റ്റ്](#26-asyncawait)**
+27. **[ഡാറ്റാ സ്ട്രക്ചറുകൾ](#27-data-structures)**
+28. **[എക്‌സ്പെൻസീവ് ഓപ്പറേഷനും ബിഗ് ഓ നോട്ടേഷനും](#28-expensive-operation-and-big-o-notation)**
+29. **[അൽഗോരിതങ്ങൾ](#29-algorithms)**
+30. **[ഇൻഹെരിറ്റൻസ്, പോളിമോർഫിസം, കോഡ് റീയൂസ്](#30-inheritance-polymorphism-and-code-reuse)**
+31. **[ഡിസൈൻ പാറ്റേണുകൾ](#31-design-patterns)**
+32. **[പാർഷ്യൽ അപ്ലിക്കേഷനുകൾ, കറിംഗ്, കോംപോസ്, പൈപ്പ്](#32-partial-applications-currying-compose-and-pipe)**
+33. **[ക്ലീൻ കോഡ്](#33-clean-code)**
 
 ---
 
-## 1. Call Stack
+## 1. കോൾ സ്റ്റാക്ക്
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [Call Stack — MDN](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
 
@@ -130,13 +130,13 @@ All the translations for this repo will be listed below:
 - [Learn the JavaScript Call Stack - codecupdev](https://www.youtube.com/watch?v=HXqXPGS96rw)
 - [JavaScript Functions and the Call Stack | How does the Call stack work - Chidre'sTechTutorials](https://www.youtube.com/watch?v=P6H-T4cUDR4)
     
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 2. Primitive Types
+## 2. പ്രിമിറ്റീവ് ടൈപ്പുകൾ
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [JavaScript data types and data structures — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values)
 
@@ -167,11 +167,11 @@ All the translations for this repo will be listed below:
 - [TIPOS DE DATOS PRIMITIVOS en JAVASCRIPT - La Cocina del Código](https://www.youtube.com/watch?v=cC65D2q5f8I)
 - [Data Type in JavaScript - ScholarHat](https://www.youtube.com/watch?v=aFDvBjVjCh8)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 3. Value Types and Reference Types
+## 3. വാല്യു ടൈപ്പുകളും റെഫറന്‍സ് ടൈപ്പുകളും
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -195,11 +195,11 @@ All the translations for this repo will be listed below:
 - [JavaScript - Reference vs Primitive Values/ Types - Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
 - [Value Types and Reference Types in JavaScript - Programming with Mosh](https://www.youtube.com/watch?v=e-_mDyqm2oU)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 4. Implicit, Explicit, Nominal, Structuring and Duck Typing
+## 4. അന്തരംഗം, ബാഹ്യം, നോമിനൽ, സ്ട്രക്ചറിംഗ്, ഡക്ക് ടൈപ്പിംഗ്
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -217,11 +217,11 @@ All the translations for this repo will be listed below:
 - [EL SISTEMA de TIPOS DE JAVASCRIPT - La Cocina del Código](https://www.youtube.com/watch?v=0ei4nb49GKo)
 - [Duck Typing in Javascript - Techmaker Studio](https://www.youtube.com/watch?v=oEpgyoMEkrM)
 
-### Books
+### പുസ്തകങ്ങൾ
 
 - [You Don't Know JS, 1st Edition: Types & Grammar — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
@@ -249,13 +249,13 @@ All the translations for this repo will be listed below:
 - [=== vs == in javascript - Hitesh Choudhary](https://www.youtube.com/watch?v=a0S1iG3TgP0)
 - [The typeof operator in JS - CodeVault](https://www.youtube.com/watch?v=NSS5WRcv7yM)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 6. Function Scope, Block Scope and Lexical Scope
+## 6. ഫംഗ്ഷൻ സ്കോപ്പ്, ബ്ലോക്ക് സ്കോപ്പ്, ലെക്സിക്കൽ സ്കോപ്പ്
 
-### Books
+### പുസ്തകങ്ങൾ
 
 - [You Don't Know JS Yet, 2nd Edition: Scope & Closures — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/scope-closures)
 
@@ -287,11 +287,11 @@ All the translations for this repo will be listed below:
 - [Lexical scoping in javascript - Hitesh Choudhary](https://www.youtube.com/watch?v=qT5S7GgIioE)
  
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 7. Expression vs Statement
+## 7. എക്‌സ്പ്രെഷൻ vs സ്റ്റേറ്റ്മെന്റ്
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -317,13 +317,13 @@ All the translations for this repo will be listed below:
 - [Expression in javascript | Statement in javascript - Sathelli Srikanth](https://www.youtube.com/watch?v=cVDs3TZ-kXs)
 
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 8. IIFE, Modules and Namespaces
+## 8. ഐഐഎഫ്ഇ, മോഡ്യൂളുകൾ, നെയിംസ്പെയ്‌സുകൾ
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [IIFE — MDN](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 -  [Modularity — MDN](https://developer.mozilla.org/en-US/docs/Glossary/modularity)
@@ -356,11 +356,11 @@ All the translations for this repo will be listed below:
 - [ES6 Modules — TempleCoding](https://www.youtube.com/watch?v=5P04OK6KlXA)
 - [JavaScript IIFE (Immediately Invoked Function Expressions) — Steve Griffith](https://www.youtube.com/watch?v=Xd7zgPFwVX8&)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 9. Message Queue and Event Loop
+## 9. മെസേജ് ക്യു, ഇവന്റ് ലൂപ്പ്
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -382,11 +382,11 @@ All the translations for this repo will be listed below:
 - [Callbacks, Sincrono, Assíncrono e Event Loop (PT-BR)](https://www.youtube.com/watch?v=6lbBaM18X3g)
 - [JavaScript Event Loop: How it Works and Why it Matters in 5 Minutes - James Q Quick](https://www.youtube.com/watch?v=6lbBaM18X3g)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 10. setTimeout, setInterval and requestAnimationFrame
+## 10. സെറ്റ്ടൈംഔട്ട്, സെറ്റ്ഇന്റർവൽ, റിക്വസ്റ്റാനിമേഷൻഫ്രെയിം
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -407,11 +407,11 @@ All the translations for this repo will be listed below:
 - [JavaScript Timers — Steve Griffith](https://www.youtube.com/watch?v=0VVJSvlUgtg)
 - [JavaScript setTimeOut and setInterval Explained — Theodore Anderson](https://www.youtube.com/watch?v=mVKfrWCOB60)   
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 11. JavaScript Engines
+## 11. ജാവാസ്ക്രിപ്റ്റ് എഞ്ചിനുകൾ
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -434,11 +434,11 @@ All the translations for this repo will be listed below:
 - [Understanding the V8 JavaScript Engine - freeCodeCamp Talks](https://www.youtube.com/watch?v=xckH5s3UuX4)
 - [JavaScript Under The Hood - JavaScript Engine Overview - Traversy Media](https://www.youtube.com/watch?v=oc6faXVc54E)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 12. Bitwise Operators, Type Arrays and Array Buffers
+## 12. ബിറ്റ്‌വൈസ് ഓപ്പറേറ്ററുകൾ, ടൈപ്പ്ഡ് ArrayകളുംArray ബഫറുകളും
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -456,13 +456,13 @@ All the translations for this repo will be listed below:
 - [JS Bitwise Operators and Binary Numbers — Steve Griffith - Prof3ssorSt3v3](https://www.youtube.com/watch?v=RRyxCmLX_ag)
 - [Deep Dive into Blobs, Files, and ArrayBuffers — Steve Griffith - Prof3ssorSt3v3](https://www.youtube.com/watch?v=ScZZoHj7mqY)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 13. DOM and Layout Trees
+## 13. ഡോം, ലേഔട്ട് ട്രീകൾ
 
-### Books
+### പുസ്തകങ്ങൾ
 
 -  [Eloquent JavaScript, 3rd Edition: Ch. 14 - The Document Object Model](https://eloquentjavascript.net/14_dom.html)
 
@@ -487,11 +487,11 @@ All the translations for this repo will be listed below:
 - [JavaScript DOM Manipulation Methods — Web Dev Simplified](https://www.youtube.com/watch?v=y17RuWkWdn8)
 - [JavaScript DOM Traversal Methods — Web Dev Simplified](https://www.youtube.com/watch?v=v7rSSy8CaYE)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 14. Factories and Classes
+## 14. ഫാക്ടറികൾ, ക്ലാസുകൾ
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -512,13 +512,13 @@ All the translations for this repo will be listed below:
 - [Factory Functions in JavaScript — Fun Fun Function](https://www.youtube.com/watch?v=ImwrezYhw4w)
 - [Javascript Tutorial Function Factories — Crypto Chan](https://www.youtube.com/watch?v=R7-IwpH80UE)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 15. this, call, apply and bind
+## 15. തിസ്, കോൾ, അപ്ലേ, ബൈന്‍ഡ്
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [call() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 -  [bind() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
@@ -561,11 +561,11 @@ All the translations for this repo will be listed below:
 - [call, apply and bind method in JavaScript — Akshay Saini](https://www.youtube.com/watch?v=75W8UPQ5l7k)
 - .[Javascript Interview Questions ( Call, Bind and Apply ) - Polyfills, Output Based, Explicit Binding - Roadside Coder] (https://youtu.be/VkmUOktYDAU?si=SdvLZ8FBmephPxjS)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 16. new, Constructor, instanceof and Instances
+## 16. ന്യു, കണ്‍സ്ട്രക്ടർ, ഇന്‍സ്റ്റന്റ്സ്, ഇന്‍സ്റ്റന്‍സ്ഓഫ്
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -578,13 +578,13 @@ All the translations for this repo will be listed below:
 -  [Function and Object, instances of each other — Kiro Risk](https://javascriptrefined.io/function-and-object-instances-of-each-other-1e1095d5faac)
 -  [JavaScript instanceof operator](https://flexiple.com/javascript/instanceof-javascript)
   
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 17. Prototype Inheritance and Prototype Chain
+## 17. പ്രോട്ടോടൈപ്പ് ഇൻഹെരിറ്റൻസ്, പ്രോട്ടോടൈപ്പ് ചെയിൻ
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [Inheritance and the prototype chain — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
@@ -625,18 +625,18 @@ All the translations for this repo will be listed below:
 - [A Beginner's Guide to Javascript's Prototype — Tyler Mcginnis](https://www.youtube.com/watch?v=XskMWBXNbp0)
 - [Prototypes in Javascript - p5.js Tutorial — The Coding Train](https://www.youtube.com/watch?v=hS_WqkyUah8)
 
-### Books
+### പുസ്തകങ്ങൾ
 
 - [You Don't Know JS, 1st Edition: this & Object Prototypes — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
 - [The Principles of Object-Oriented JavaScript - Nicholas C. Zakas](https://www.google.com.pk/books/edition/The_Principles_of_Object_Oriented_JavaSc/rorlAwAAQBAJ?hl=en&gbpv=1&pg=PP1&printsec=frontcover)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 18. Object.create and Object.assign
+## 18. ഓബ്ജക്ട്.ക്രിയേറ്റ്, ഓബ്ജക്ട്.അസൈൻ
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [Object.create() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 -  [Object.assign() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
@@ -661,11 +661,11 @@ All the translations for this repo will be listed below:
 - [Object.assign() explained — Aaron Writes Code](https://www.youtube.com/watch?v=aw7NfYhR5rc)
 - [Object.assign() Method — techsith](https://www.youtube.com/watch?v=9Ky4X6inpi4)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 19. map, reduce, filter
+## 19. മാപ്പ്, റിഡ്യൂസ്, ഫിൽട്ടർ
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -721,11 +721,11 @@ All the translations for this repo will be listed below:
 - [map Array Method | JavaScript Tutorial - Florin Pop](https://www.youtube.com/watch?v=P4RAFdZDn3M)
 - [Different array methods in 1 minute | Midudev (Spanish)](https://youtu.be/Ah7-PPjQ5Ls)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 20. Pure Functions, Side Effects, State Mutation and Event Propagation
+## 20. പ്യുർ ഫങ്ഷനുകൾ, സൈഡ് ഇഫക്ടുകൾ, സ്റ്റേറ്റ് മ്യൂട്ടേഷൻ, ഇവന്റ് പ്രോപഗേഷൻ
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -756,13 +756,13 @@ All the translations for this repo will be listed below:
 - [Pure Functions - Programação Funcional: Parte 1 - Fun Fun Function](https://www.youtube.com/watch?v=BMUiFMZr7vk)
 - [Event Propagation - JavaScript Event Bubbling and Propagation - Steve Griffith](https://www.youtube.com/watch?v=JYc7gr9Ehl0)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 21. Closures
+## 21. ക്ലോസറുകൾ
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [Closures — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 -  [Closure — JavaScript.Info](https://javascript.info/closure)
@@ -808,13 +808,13 @@ All the translations for this repo will be listed below:
 - [Learn Closures In 7 Minutes - Web Dev Simplified](https://www.youtube.com/watch?v=3a0I8ICR1Vg)
 
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 22. High Order Functions
+## 22. ഹയർ ഓർഡർ ഫങ്ഷനുകൾ
 
-### Books
+### പുസ്തകങ്ങൾ
 
 -  [Eloquent JavaScript, 3rd Edition: Ch. 5 - Higher-order Functions](https://eloquentjavascript.net/05_higher_order.html)
 
@@ -839,11 +839,11 @@ All the translations for this repo will be listed below:
 - [Part 2: Understanding Why We Need Higher Order Functions - Codesmith](https://www.youtube.com/watch?v=28MXziDZkE4)
 - [Higher-Order Functions ft. Functional Programming - Akshay Saini](https://www.youtube.com/watch?v=HkWxvB1RJq0)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 23. Recursion
+## 23. റിക്കോർഷൻ
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -872,15 +872,15 @@ All the translations for this repo will be listed below:
 - [Recursion crash course - Colt Steele](https://www.youtube.com/watch?v=lMBVwYrmFZQ&ab_channel=ColtSteele)
 - [What Is Recursion - In Depth - Web Dev Simplified](https://www.youtube.com/watch?v=6oDQaB2one8)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 24. Collections and Generators
+## 24. കളക്ഷനുകളും ജനറേറ്ററുകളും
 
-### Reference
+### റെഫറന്‍സ്
 
--  [Generator — MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+-  [Generator — MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/റെഫറന്‍സ്/Global_Objects/Generator)
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -907,13 +907,13 @@ All the translations for this repo will be listed below:
 - [The Differences between ES6 Maps and Sets — Steve Griffith](https://www.youtube.com/watch?v=m4abICrldQI)
 - [Javascript Generators - THEY CHANGE EVERYTHING - ES6 Generators Harmony Generators — LearnCode.academy](https://www.youtube.com/watch?v=QO07THdLWQo)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 25. Promises
+## 25. പ്രോമിസുകൾ
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [Promise — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
@@ -962,17 +962,17 @@ All the translations for this repo will be listed below:
 - [JavaScript Promises In 10 Minutes — Web Dev Simplified ](https://www.youtube.com/watch?v=DHvZLI7Db8E)
 - [Promises | Ep 02 Season 02 - Namaste JavaScript - Akshay Saini ](https://youtu.be/ap-6PPAuK1Y?si=Ri1fopXeYjlrHzpf)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 26. async/await
+## 26. ഏസിങ്ക്/അവെയ്റ്റ്
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [async/await — JavaScript.Info](https://javascript.info/async-await)
 
-### Books
+### പുസ്തകങ്ങൾ
 
 -  [Eloquent JavaScript, 3rd Edition: Ch. 11 - Asynchronous Programming](https://eloquentjavascript.net/11_async.html)
 -  [Exploring JS: Asynchronous Programming](http://exploringjs.com/es6/ch_async.html)
@@ -1013,11 +1013,11 @@ All the translations for this repo will be listed below:
 - [JavaScript Async Await — Web Dev Simplified](https://www.youtube.com/watch?v=V_Kr9OSfDeU)
 - [Promise async and await in javascript — Hitesh Choudhary](https://youtu.be/Gjbr21JLfgg?si=SDCVKr9ONw2GsNdT)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 27. Data Structures
+## 27. ഡാറ്റാ സ്ട്രക്ചറുകൾ
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -1043,11 +1043,11 @@ All the translations for this repo will be listed below:
 - [Learning JavaScript Data Structures and Algorithms: Sorting — Packt Video](https://www.youtube.com/watch?v=Ymh_AurrMbA)
 - [JavaScript Data Structures: Getting Started — Academind](https://www.youtube.com/watch?v=41GSinwoMYA&ab_channel=Academind)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 28. Expensive Operation and Big O Notation
+## 28. എക്‌സ്പെൻസീവ് ഓപ്പറേഷനും ബിഗ് ഓ നോട്ടേഷനും
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -1068,11 +1068,11 @@ All the translations for this repo will be listed below:
 - [JavaScript Algorithms Crash Course: Learn Algorithms & "Big O" from the Ground Up! - Academind](https://www.youtube.com/watch?v=JgWm6sQwS_I)
 - [Big O Notation - Data Structures and Algorithms in Javascript - RoadSideCoder](https://www.youtube.com/watch?v=LaexPVi1VRE)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 29. Algorithms
+## 29. അൽഗോരിതങ്ങൾ
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -1095,13 +1095,13 @@ All the translations for this repo will be listed below:
 - 🎥 [JavaScript Data Structures: Getting Started - Academind](https://www.youtube.com/watch?v=41GSinwoMYA)
 - 🎥 [Algorithms and Data Structures - The Coding Train (Daniel Shiffman)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 30. Inheritance, Polymorphism and Code Reuse
+## 30. ഇൻഹെരിറ്റൻസ്, പോളിമോർഫിസം, കോഡ് റീയൂസ്
 
-### Reference
+### റെഫറന്‍സ്
 
 -  [Inheritance in JavaScript — MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
 -  [Class inheritance, super — JavaScript.Info](https://javascript.info/class-inheritance)
@@ -1122,13 +1122,13 @@ All the translations for this repo will be listed below:
 - [JavaScript ES6 Classes and Inheritance — Traversy Media](https://www.youtube.com/watch?v=RBLIm5LMrmc)
 - [Polymorphism in JavaScript — kudvenkat](https://www.youtube.com/watch?v=zdovG9cuEBA)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 31. Design Patterns
+## 31. ഡിസൈൻ പാറ്റേണുകൾ
 
-### Books
+### പുസ്തകങ്ങൾ
 
 -  [Learning JavaScript Design Patterns — Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 -  [Pro JavaScript Design Patterns — Ross Harmes and Dustin Diaz](https://pepa.holla.cz/wp-content/uploads/2016/08/Pro-JavaScript-Design-Patterns.pdf)
@@ -1160,13 +1160,13 @@ All the translations for this repo will be listed below:
 - [JavaScript Design Patterns — Udacity](https://www.udacity.com/course/javascript-design-patterns--ud989)
 - [JavaScript Patterns for 2017 — Scott Allen](https://www.youtube.com/watch?v=hO7mzO83N1Q)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 32. Partial Applications, Currying, Compose and Pipe
+## 32. പാർഷ്യൽ അപ്ലിക്കേഷനുകൾ, കറിംഗ്, കോംപോസ്, പൈപ്പ്
 
-### Books
+### പുസ്തകങ്ങൾ
 
 -  [Functional-Light JavaScript: Ch. 3 - Managing Function Inputs — Kyle Simpson](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch3.md)
 
@@ -1208,11 +1208,11 @@ All the translations for this repo will be listed below:
 - [JavaScript Partial Application — Theodore Anderson](https://www.youtube.com/watch?v=jkebgHEcvac)
 - [call, apply and bind method in JavaScript](https://www.youtube.com/watch?v=75W8UPQ5l7k&t=261s)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ---
 
-## 33. Clean Code
+## 33. ക്ലീൻ കോഡ്
 
 ### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
 
@@ -1240,7 +1240,7 @@ All the translations for this repo will be listed below:
 - 🎥 [JavaScript Clean Code](https://youtu.be/vPXzVNmCPg4?si=QR1k4E6Zx5H4mfcs)
 - 🎥 [Tips On Learning How To Code](https://www.youtube.com/watch?v=0wHyoBPc6zs)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ മുകളിലേക്ക്](#table-of-contents)**
 
 ## <img  align= center width=50px height=50px src="https://moein.video/wp-content/uploads/2022/05/license-GIF-Certificate-Royalty-Free-Animated-Icon-350px-after-effects-project.gif"> License <a id = "License"></a>
 This software is licensed under MIT License, See [License](https://github.com/leonardomso/33-js-concepts/blob/master/LICENSE) for more information ©Leonardo Maldonado.
